@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Book List App</title>
+	<style type="text/css" media="screen">
+		body{text-align: center;}
+		.container{max-width: 620px;margin: 0 auto; background-color: #ccc; padding: 2rem;}
+		table{width: 100%;}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2>My BookList App</h2>
+		<form id="bs-form">
+			<label>Title<input type="text" name="title" id="title" required></label><br>
+			<label>Author<input type="text" name="author" id="author" required></label><br>
+			<label>ISBN#<input type="number" name="isbn" id="isbn" required></label><br>
+			<input type="submit" id="submit" name="submit" value="Add a Book">
+		</form>
+		<hr>
+		<table>
+			<thead>
+				<tr>
+					<th>Title</th>
+					<th>Author</th>
+					<th>ISSBN</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody id="book-list"></tbody>
+		</table>
+	</div>
+	<script src="bookList.js" type="text/javascript"></script>
+</body>
+</html>
